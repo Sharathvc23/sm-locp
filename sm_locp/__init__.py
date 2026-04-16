@@ -4,7 +4,7 @@ Defeasible logic engine, machine-readable regulations, W3C Verifiable
 Credentials, and regime providers for autonomous compliance.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 from .engine import (
     DefeasibleTheory,
@@ -19,6 +19,23 @@ from .engine import (
 from .json_theory_loader import JsonTheoryLoader, RulesManifest
 from .mrr_evaluator import ComplianceStatus, ConditionResult, EvaluationResult, MRREvaluator
 from .mrr_loader import MRRCertification, MRRCondition, MRRDataSource, MRRLoader, MRRPolicy
+from .persistence import (
+    PROTOCOL_VERSION,
+    ContentHash,
+    CredentialRecord,
+    CredentialStore,
+    EvaluationRecord,
+    EvaluationStore,
+    FileSystemPersistence,
+    InMemoryPersistence,
+    Persistence,
+    PolicyRecord,
+    PolicyStore,
+    PolicyStoreConflictError,
+    StatusListExhaustedError,
+    StatusListRecord,
+    StatusListStore,
+)
 from .regime import BaseRegimeProvider, RegimeProvider
 from .status_list import StatusList2021, StatusListEntry, verify_status_list_credential
 from .vc_generator import (
@@ -70,4 +87,20 @@ __all__ = [
     # Regime
     "RegimeProvider",
     "BaseRegimeProvider",
+    # Persistence
+    "PROTOCOL_VERSION",
+    "ContentHash",
+    "CredentialRecord",
+    "CredentialStore",
+    "EvaluationRecord",
+    "EvaluationStore",
+    "FileSystemPersistence",
+    "InMemoryPersistence",
+    "Persistence",
+    "PolicyRecord",
+    "PolicyStore",
+    "PolicyStoreConflictError",
+    "StatusListExhaustedError",
+    "StatusListRecord",
+    "StatusListStore",
 ]

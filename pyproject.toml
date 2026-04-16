@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sm-locp"
-version = "0.1.0"
+version = "0.2.0"
 description = "Stellarminds Open Compliance Protocol — defeasible logic engine, machine-readable regulations, and W3C Verifiable Credentials for autonomous compliance"
 readme = "README.md"
 license = "MIT"
