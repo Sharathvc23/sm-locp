@@ -1,0 +1,42 @@
+{
+  "rule_id": "ws-forklift-cert",
+  "agency": "WAREHOUSE_SAFETY",
+  "title": "Forklift Operator Certification",
+  "version": "1.0.0",
+  "description": "Operators must have valid certification and minimum training hours",
+  "cfr_reference": "OSHA 1910.178",
+  "conditions": [
+    {
+      "field": "operator.certification_valid",
+      "operator": "==",
+      "value": true,
+      "required": true,
+      "weight": 1.0,
+      "description": "Valid certification required"
+    },
+    {
+      "field": "operator.training_hours",
+      "operator": ">=",
+      "value": 40,
+      "required": true,
+      "weight": 0.8,
+      "description": "Minimum 40 hours training"
+    },
+    {
+      "field": "operator.incident_free_days",
+      "operator": ">=",
+      "value": 30,
+      "required": false,
+      "weight": 0.3,
+      "description": "30 days without incidents (recommended)"
+    }
+  ],
+  "applicability": {
+    "facility_type": ["warehouse", "distribution_center"]
+  },
+  "certification": {
+    "self_certifiable": true,
+    "proof_format": "verifiable_credential",
+    "ttl_seconds": 86400
+  }
+}
