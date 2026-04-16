@@ -135,13 +135,6 @@ Both are composable. A regime provider can build a theory combining rules from M
 └──────────────────────────────────────────────────────────┘
 ```
 
-## 8. Limitations and Future Work
-
-- **No persistence layer** — the current implementation is in-memory. Production deployments should implement persistent storage for status lists and evaluation history.
-- **No multi-regime orchestration** — cross-regime conflict resolution requires combining theories manually via `get_combined_theory()`. A higher-level orchestrator is left to implementors.
-- **No semantic search** — policies are matched by applicability filters, not by natural language query. Embedding-based retrieval is a natural extension.
-- **Confidence model is simple** — weighted average of condition results. Bayesian or Monte Carlo confidence models are possible via the `risk_model` field in MRR policies.
-
 ---
 
 *First published: 2026-04-15 | Last modified: 2026-04-15*
