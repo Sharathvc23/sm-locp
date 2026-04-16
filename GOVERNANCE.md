@@ -68,4 +68,4 @@ Contributions are welcome under the MIT license. Pull requests should:
 
 ## Attribution
 
-`sm-locp` is authored by [stellarminds.ai](https://stellarminds.ai) as a research contribution to [Project NANDA](https://projectnanda.org). The Protocol is open; proprietary corpora, operational platforms, and commercial offerings built on top of the Protocol remain the property of their respective authors.
+`sm-locp` is a personal research contribution by [Stellarminds.ai](https://stellarminds.ai), aligned with [Project NANDA](https://projectnanda.org) standards. The Protocol is open; proprietary corpora, operational platforms, and commercial offerings built on top of the Protocol remain the property of their respective authors.

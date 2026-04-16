@@ -2,7 +2,7 @@
 
 **A defeasible-logic framework for autonomous, machine-verifiable regulatory compliance**
 
-*Research by [stellarminds.ai](https://stellarminds.ai)*
+*Personal research contribution by [Stellarminds.ai](https://stellarminds.ai), aligned with [Project NANDA](https://projectnanda.org) standards.*
 
 ---
 
