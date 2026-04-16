@@ -1,4 +1,4 @@
-# SM LOCP
+
 
 **Stellarminds Open Compliance Protocol** -- a defeasible-logic compliance engine with machine-readable regulations and W3C Verifiable Credentials.
 
